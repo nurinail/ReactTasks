@@ -1,0 +1,37 @@
+.employeeTable {
+  width: 100%;
+  background-color: var(--form-bgColor);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 0 30px 10px 30px;
+  height: 540px;
+  overflow-x: auto;
+  position: relative;
+  .list_title {
+    text-align: center;
+    font-weight: bold;
+    background-color: #eaeaea;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+  }
+  .list_item {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+
+    p {
+      color: black;
+      text-align: center;
+      font-size: 10px;
+    }
+  }
+  .list_employee {
+    padding: 6px 10px;
+    border-radius: 10px;
+    border: 1px solid var(--placeholder-color);
+  }
+}
