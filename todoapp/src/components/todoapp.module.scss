@@ -1,0 +1,72 @@
+.todoapp {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-image: url("../assets/pexels-thatguycraig000-1563356.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  .head {
+    height: 200px;
+    padding: 20px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    &_title {
+      color: white;
+    }
+    &_input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 10px;
+      background-color: var(--main-background-color);
+      color: var(--main-color);
+      border: 1px solid gainsboro;
+    }
+    .todoitem {
+      width: 100%;
+      .head_lists {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        &_item {
+          width: 100%;
+          border-bottom: 1px solid gainsboro;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 10px;
+          background-color: var(--main-background-color);
+          &_input {
+            background-color: transparent;
+            width: 80%;
+            color: var(--main-color);
+          }
+          &_buttons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 4px;
+
+            &_item {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-size: 18px;
+              background-color: transparent;
+              border: none;
+              color: var(--main-color);
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li{
+  list-style-type: none;
+}
+input{
+  border: none;
+}
+input:focus{
+  outline: none;
+}
+button{
+  cursor: pointer;
+  border: none;
+}
+:root{
+  --main-color:black;
+  --main-background-color:white;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root{
+    --main-color:#C8CBE7;
+    --main-background-color:#25273d;
+  }
+}
+
